@@ -1,0 +1,6 @@
+dist/*
+*.json
+*.md
+yarn.lock
+**/*.js
+**/*.d.ts
