@@ -5,7 +5,10 @@ export interface IKdniao {
   env?: boolean;
 }
 export interface IParams {
-  url: string;
   type: string;
   params: object;
+}
+
+export interface IAllApi extends IParams {
+  url: string;
 }

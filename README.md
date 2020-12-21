@@ -23,3 +23,4 @@ const result = await kdniao.allApi({
 
 ## 文档
 [快递鸟api](http://www.kdniao.com/api-track)
+[快递鸟api使用情况](http://www.kdniao.com/membership)
