@@ -10,6 +10,8 @@ const kdniao = new Kdniao({
   EBusinessID: '商户ID',
   key: '商户key',
 });
+或者
+const kdniao = new Kdniao('商户ID', '商户key');
 
 const result = await kdniao.allApi({
     type: '1002', // 请求指令类型

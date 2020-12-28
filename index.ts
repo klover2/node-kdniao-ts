@@ -7,9 +7,17 @@ class Kdniao {
   private EBusinessID: string;
   private DataType = '2';
   private key: string;
-  constructor(obj: IKdniao) {
-    this.EBusinessID = obj.EBusinessID;
-    this.key = obj.key;
+  public constructor(obj: IKdniao);
+  public constructor(EBusinessID: string, key: string);
+
+  constructor(arg1: IKdniao | string, key?: string) {
+    if (arg1 instanceof Object) {
+      this.EBusinessID = arg1.EBusinessID;
+      this.key = arg1.key;
+    } else {
+      this.EBusinessID = arg1;
+      this.key = key || '';
+    }
   }
   // 不支持物流轨迹地图页嵌入
   public async allApi(obj: IAllApi): Promise<object> {
